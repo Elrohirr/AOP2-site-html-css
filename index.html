@@ -6,23 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page - Tributo ao Ozzy</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <script src="scripts.js" defer></script>
 </head>
 
 <body>
-    <div class="header">
-        <a href="index.html" class="logo"> <img src="./Imagens/Logo-Photoroom.png" alt="logo ozzy"> </a>
-        <nav class="navbar">
-            <ul>
+    <nav class="navbar">
+        <a href="index.html" class="logo"> <img src="./Imagens/Logo-Photoroom.png" alt=""> </a>
+        <ul class="navbar-desktop">
+            <li><a href="biografia.html">Biografia</a></li>
+            <li><a href="discografia.html">Discografia</a></li>
+            <li><a href="homenagem.html">Homenagem</a></li>
+            <li><a href="contatos.html">Contatos</a></li>
+        </ul>
+        <div class="mobile-menu" id="mobileMenu">
+            <button class="close" id="closeButton">
+                <i class="fas fa-times"></i>
+            </button>
+            <ul class="navbar-mobile">
                 <li><a href="biografia.html">Biografia</a></li>
                 <li><a href="discografia.html">Discografia</a></li>
                 <li><a href="homenagem.html">Homenagem</a></li>
                 <li><a href="contatos.html">Contatos</a></li>
             </ul>
-        </nav>
-        <img src="./Imagens/Logo2-Photoroom.png" alt="Tributo ao Ozzy" class="tributo">
-    </div>
+        </div>
+        <button class="ham" id="hamButton">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
 
-    <main>
+    <main class="container">
         <h1>Bem vindos ao blog de homenagem ao Ozzy Osbourne 🤘</h1>
         <p> Ozzy Osbourne não é apenas um nome na história do rock — ele é um símbolo de
             resistência,
@@ -66,10 +79,6 @@
             </div>
         </div>
     </main>
-    <footer>Este site foi feito como atividade avaliativa na disciplina de desenvolvimento web - Front End. Não há fins
-        lucrativos.</footer>
-
 </body>
-
 
 </html>
